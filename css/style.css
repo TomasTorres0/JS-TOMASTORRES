@@ -1,410 +1,200 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  .index {
-      background-color: #F0EBCC;
-      color: black;
-      font-family: sans-serif;
-      background-image: url(../imagenes/fondo2.jpg);
-      background-repeat: repeat;
-    }
-  .contenedor {
-      width: 100%;
-      max-width: 1440px;
-      margin:5px auto;
-      display: grid;
-      grid-gap: 25px;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(9, auto);
-      grid-template-areas:"contacto contacto contacto"
-                          "header header header" 
-                          "contenedor1 contenedor1 contenedor1"
-                          "contenedor2 contenedor2 contenedor2"
-                          "contenedor3 contenedor3 contenedor3"
-                          "caja1 caja2 caja3"
-                          "caja1 caja2 caja3"
-                          "caja1 caja2 caja3"
-                          "footer footer footer";
-  }
-  .contenedor > div,
-  .contenedor .header,
-  .contenedor .contenedor1,
-  .contenedor .contenedor2,
-  .contenedor .contenedor3,
-  .contenedor .caja1,
-  .contenedor .caja2,
-  .contenedor .footer{
-      padding: 20px;
-      border-radius: 4px;
-      background-color: #F0EBCC;
-  }
-  .contenedor .contacto{
-    grid-area: contacto;
-    background-color: black;
-    color: white;
-  }
-  .contenedor .header{
-    grid-area: header;
-    background-image: linear-gradient(#999393 , #7c7979,#1c1cc0);
-    position: relative;
-    z-index: 100;
-  }
-  .contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .logo{
-    width: 320px;
-    height: 80px;
-  }
-  .logoo{
-    text-align: center;
-  }
-  .container-fluid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .ulheader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-  }
-  .li-header{
-    list-style: none;
-  }
-  .navbar{
-    color: #000;
-  }
-  .contenedor .contenedor1{
-    grid-area: contenedor1;
-    background-image: linear-gradient(#2e2eaf,#b4852d);
-  }
-  .titulo{
-    text-align: center;
-  }
-  .parrafo1{
-    margin-top: 20px;
-    -moz-column-count: 3;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 20px;
-    column-count: 3;
-    column-gap: 20px;
-    font-family: cursive;
-  }
-  .contenedor .contenedor2{
-    grid-area: contenedor2;
-    background-image: linear-gradient(#b6862d,#4682b4);
-  }
-  .titulo2{
-    text-align: center;
-    margin: 1rem;
-  }
-  .image1{
-    display: float;
-    width: 420px;
-    height: 275px;
-    margin-left: 2rem;
-  }
-  .contenedor .contenedor3{
-    grid-area: contenedor3;
-    background-image: linear-gradient(#4682b4,#808080);
-  }
-  .contenedor .caja1{
-    grid-area: caja1;
-    background-image: linear-gradient(#808080,#ffffff);
-  }
-  .contenedor .caja2{
-    grid-area: caja2;
-    background-image: linear-gradient(#808080,#ffffff);
-  }
-  .contenedor .caja3{
-    grid-area: caja3;
-    background-image: linear-gradient(#808080,#ffffff);
-  }
-  .img{
-    text-align: center;
-  }
-  .imagecaja{
-    width: 300px;
-    height: 200px;
-    border-radius: 1rem;
-  }
-  .titulo-caja{
-    text-align: start;
-    font-size: 2rem;
-    margin-top: 1.5rem;
-  }
-  .p-caja{
-    font-size: large;
-    font-family: initial;
-    color: #242527;
-    text-align: center;
-  }
-  .ul-caja{
-    text-align: start;
-    padding: 1rem;
-  }
-  li{
-    margin: 1rem;
-    font-size: large;
-    text-align: start;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style: circle;
-  }
-  .boton{
-    text-align: center; 
-  }
-  .contenedor .footer{
-    grid-area: footer;
-    background-image: linear-gradient(#ffffff,#000);
-  }
-  .alineartexto{
-    text-align: center;
-  }
-  .ul-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-  }
-  .li-footer{
-    list-style: none;
-  }
-
-  @media (max-width:600px) {
-    .index {
-      background-color: #F0EBCC;
-      color: black;
-      font-family: sans-serif;
-      background-image: url(../imagenes/fondo2.jpg);
-      background-repeat: repeat;
-    }
-    .contenedor{
-       
-        grid-template-areas:"contacto contacto contacto"
-                          "header header header" 
-                          "contenedor1 contenedor1 contenedor1"
-                          "contenedor2 contenedor2 contenedor2"
-                          "contenedor3 contenedor3 contenedor3"
-                          "caja1 caja1 caja1"
-                          "caja2 caja2 caja2"
-                          "caja3 caja3 caja3"
-                          "footer footer footer";
-    }
-    .logo{
-      width: 270px;
-      height: 70px;
-    }
-    .ulheader{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-    }
-    .parrafo1{
-      margin-top: 10px;
-    -moz-column-count: 1;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 10px;
-    column-count: 1;
-    column-gap: 10px;
-    font-family: cursive;
-    }
-    .image1{
-      display: float;
-      width: 280px;
-      height: 120px;
-      margin: auto;
-    }
-    .imagecaja{
-      width: 150px;
-      height: 100px;
-      border-radius: 1rem;
-    }
-
-  }
-
-
-  /*COMIENZA LA PAGINA GRAFICOS*/
-.pagina-graficos{
-  background-image:linear-gradient(#ff0000, #bb1818 ,#2d00f8) ;
+  margin: 0;
+  padding: 0;
 }
-  .contenedorA {
-    width: 100%;
-    max-width: 1440px;
-    margin:5px auto;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas:"contacto contacto contacto"
-                        "header header header" 
-                        "contenedor1 contenedor1 contenedor1"
-                        "contenedor2 contenedor2 contenedor2"
-                        "footer footer footer";
+
+.index {
+  background-color: #F0EBCC;
+  color: black;
+  font-family: sans-serif;
+  background-image: url(../imagenes/fondo2.jpg);
+  background-repeat: repeat;
 }
-.contenedorA > div,
-.contenedorA .header,
-.contenedorA .contenedor1,
-.contenedorA .contenedor2,
-.contenedorA .footer{
-    padding: 20px;
-    border-radius: 4px;
-    
+
+.contenedor {
+  width: 100%;
+  max-width: 1440px;
+  margin: 5px auto;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "contenedor3 contenedor3 contenedor3" "caja1 caja2 caja3" "caja1 caja2 caja3" "caja1 caja2 caja3" "footer footer footer";
 }
-.contenedorA .contacto{
+
+.contenedor > div,
+.header,
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.caja1,
+.caja2,
+.footer {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #F0EBCC;
+}
+
+.contenedor .contacto {
   grid-area: contacto;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.contenedorA .header{
+.contenedor .header {
   grid-area: header;
+  background-image: linear-gradient(#999393, #7c7979, #1c1cc0);
   position: relative;
   z-index: 100;
 }
-.contenedorA .contenedor1{
+.contenedor .header .logoo {
+  text-align: center;
+}
+.contenedor .header .logo {
+  width: 320px;
+  height: 80px;
+}
+.contenedor .header .ulheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.contenedor .header .li-header {
+  list-style: none;
+}
+.contenedor .header .navbar {
+  color: #000;
+}
+.contenedor .contenedor1 {
   grid-area: contenedor1;
-
+  background-image: linear-gradient(#2e2eaf, #b4852d);
 }
-.contenedorA .contenedor2{
+.contenedor .contenedor1 .titulo {
+  text-align: center;
+}
+.contenedor .contenedor1 .parrafo1 {
+  margin-top: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  font-family: cursive;
+}
+.contenedor .contenedor2 {
   grid-area: contenedor2;
-
+  background-image: linear-gradient(#b6862d, #4682b4);
 }
-.contenedorA .footer{
+.contenedor .contenedor2 .titulo2 {
+  text-align: center;
+  margin: 1rem;
+}
+.contenedor .contenedor2 .image1 {
+  display: float;
+  width: 420px;
+  height: 275px;
+  margin-left: 2rem;
+}
+.contenedor .contenedor3 {
+  grid-area: contenedor3;
+  background-image: linear-gradient(#4682b4, #808080);
+}
+.contenedor .contenedor3 .titulo3 {
+  text-align: center;
+  color: rgba(37, 45, 61, 0.5960784314);
+}
+.contenedor .caja1 {
+  grid-area: caja1;
+  background-image: linear-gradient(#808080, #ffffff);
+}
+.contenedor .caja2 {
+  grid-area: caja2;
+  background-image: linear-gradient(#808080, #ffffff);
+}
+.contenedor .caja3 {
+  grid-area: caja3;
+  background-image: linear-gradient(#808080, #ffffff);
+}
+.contenedor .img {
+  text-align: center;
+}
+.contenedor .imagecaja {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+}
+.contenedor .titulo-caja {
+  text-align: start;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.contenedor .p-caja {
+  font-size: large;
+  font-family: initial;
+  color: #242527;
+  text-align: center;
+}
+.contenedor .ul-caja {
+  text-align: start;
+  padding: 1rem;
+}
+.contenedor li {
+  margin: 1rem;
+  font-size: large;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style: circle;
+}
+.contenedor .boton {
+  text-align: center;
+}
+.contenedor .footer {
   grid-area: footer;
+  background-image: linear-gradient(#ffffff, #000);
 }
-  
-  .titulo-graficos{
-    text-align: start;
-    font-size: 3rem;
-    font-family: cursive;
-    color: #ffffff;
-  }
-  .parrafo-graficos{
-    margin-top: 10px;
-    -moz-column-count: 3;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
-    column-count: 3;
-    column-gap: 10px;
-    font-weight: bold;
-  }
-  .imagen1-graficos{
-    margin-top: 30px;
-    border-radius: 0.5rem;
-  }
-  .titulo1-graficos{
-    font-size: 3rem;
-    text-align: center;
-    font-family: cursive;
-    color: #ff0000;
-
-  }
-
-  /* COMIENZA GRID DE LA PARTE ASIDE*/
-  .contenedorx {
-    width: 100%;
-    max-width: 1440px;
-    margin:5px auto;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "t-tarjetas t-tarjetas imga"
-                         "card-text card-text imga"
-                         "card-text card-text imga";
+.contenedor .footer .alineartexto {
+  text-align: center;
+}
+.contenedor .footer .ul-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor .footer .li-footer {
+  list-style: none;
 }
 
-.contenedorx > div,
-.contenedorx .card-text,
-.contenedorx .imga{  
-      border-radius: 4px;
-  }
-  .contenedorx .t-tarjetas{
-    grid-area: t-tarjetas;
-    height: 6vh;
-  }
-  .contenedorx .card-text{
-    grid-area: card-text;
-  }
-  .contenedorx .text-muted{
-    grid-area: text-muted;
-  }
-  .contenedorx .imga{
-    grid-area: imga;
+@media (max-width: 600px) {
+  .index {
+    background-color: #F0EBCC;
+    color: black;
+    font-family: sans-serif;
+    background-image: url(../imagenes/fondo2.jpg);
+    background-repeat: repeat;
   }
 
-  .contenedorxy { 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "imga t-tarjetas t-tarjetas"
-                         "imga card-text card-text"
-                         "imga card-text card-text";
-}
+  .contenedor {
+    grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "contenedor3 contenedor3 contenedor3" "caja1 caja1 caja1" "caja2 caja2 caja2" "caja3 caja3 caja3" "footer footer footer";
+  }
 
-.contenedorxy > div,
-.contenedorxy .card-text,
-.contenedorxy .imga{
-      padding: 20px;
-      border-radius: 4px;
+  .logo {
+    width: 270px;
+    height: 70px;
   }
-  .contenedorxy .t-tarjetas{
-    grid-area: t-tarjetas;
-    height: 6vh;
-  }
-  .contenedorxy .card-text{
-    grid-area: card-text;
-  }
-  .contenedorxy .text-muted{
-    grid-area: text-muted;
-  }
-  .contenedorxy .imga{
-    grid-area: imga;
- }
- /* TERMINA GRID DE LA PARTE ASIDE*/
-  .cardgraf{
+
+  .ulheader {
     display: flex;
-  }
-  .titulo2{
-    font-size: 2rem;
-    color: rgb(2, 2, 2);
+    flex-direction: column;
     align-items: center;
-  }
-  .card-text{
-    font-size: 1.45rem;
-    color: #101312;
-    text-align: center;
-    margin: auto;
-  }
-  .imga{
-    text-align: end;
-  }
-  .card{
-    width: 680px;
-    border-radius: 0.5em;
+    justify-content: center;
+    margin: 10px;
   }
 
-  @media (max-width:600px) {
-    .contenedorA{
-      
-      grid-template-areas:"contacto contacto contacto"
-                        "header header header" 
-                        "contenedor1 contenedor1 contenedor1"
-                        "contenedor2 contenedor2 contenedor2"
-                        "footer footer footer";
-  }
-  .titulo-graficos{
-    font-size: 1.55rem;
-  }
-  .parrafo-graficos{
+  .parrafo1 {
     margin-top: 10px;
     -moz-column-count: 1;
     -moz-column-gap: 10px;
@@ -412,263 +202,19 @@
     -webkit-column-gap: 10px;
     column-count: 1;
     column-gap: 10px;
-  }
-  .imagen1-graficos{
-    width: 240px;
-    height: 180px;
-    margin: 1rem;
-  }
-  .titulo1-graficos{
-    font-size: 1.45rem;
-    color: #ffffff;
-  }
-  .contenedorx{ 
-  grid-template-areas: "t-tarjetas t-tarjetas t-tarjetas"
-                       "card-text card-text card-text"
-                       "imga imga imga";
-}
-.contenedorxy{ 
-  grid-template-areas: "t-tarjetas t-tarjetas t-tarjetas"
-                       "card-text card-text card-text"
-                       "imga imga imga";
-}
-.titulo2{
-  margin: auto;
-}
-.card{
-  width: 240px;
-  height: 180px;
-  margin-right: 0px ;  
-}
-.imga{
-  text-align: center;
-}
-}
-
-/*COMIENZA LA PAGINA CURSOS*/
-.pagina-cursos{
-  background-image: linear-gradient(#FFC4C4,#FF869E,#FFE7BF,#A10035);
-}
-.contenedorB {
-  width: 100%;
-  max-width: 1440px;
-  margin:5px auto;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas:"contacto contacto contacto"
-                      "header header header" 
-                      "contenedor1 contenedor1 contenedor1"
-                      "contenedor2 contenedor2 contenedor2"
-                      "caja1 caja2 caja3"
-                      "caja1 caja2 caja3"
-                      "caja1 caja2 caja3"
-                      "footer footer footer";
-}
-.contenedorB > div,
-.contenedorB .header,
-.contenedorB .contenedor1,
-.contenedorB .contenedor2,
-.contenedorB .caja1,
-.contenedorB .caja2,
-.contenedorB .caja3,
-.contenedorB .footer{
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.contenedorB .contacto{
-  grid-area: contacto;
-}
-.contenedorB .header{
-  grid-area: header;
-}
-.contenedorB .contenedor1{
-  grid-area: contenedor1;
-}
-.contenedorB .contenedor2{
-  grid-area: contenedor2;
-}
-.contenedorB .caja1{
-  grid-area: caja1;
-}
-.contenedorB .caja2{
-  grid-area: caja2;
-}
-.contenedorB .caja3{
-  grid-area: caja3;
-}
-.contenedorB .footer{
-  grid-area: footer;
-}
-
-.pgraf{
-  text-align: start;
-  font-size: 2rem;
-  font-family: cursive;
-  color: #1c1cc0;
-}
-.imagencursos{
-  text-align: center;
-}
-.imagecursos{
-  width: 800px;
-  height: 400px;
-  border-radius: 1em;
-  margin: 2rem;
-}
-.titulo-cursos{
-  font-size: 2rem;
-  margin: 1rem;
-  color: #7c7979;
-}
-.parrafocursos{
-  margin-top: 10px;
-  -moz-column-count: 3;
-  -moz-column-gap: 10px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 10px;
-  column-count: 3;
-  column-gap: 10px;
-  font-weight: bold;
-  font-family: cursive;
-}
-.titulo1-cursos{
-  font-size: 2rem;
-  color: #2d00f8;
-}
-h5{
-  font-size: 1.5rem;
-  color: #ff00c8;
-}
-.btn{
-  font-size: 1.2rem;
-  margin-left: 3rem;
-}
-@media (max-width:600px) {
-  .contenedorB{
-    grid-template-areas:"contacto contacto contacto"
-                        "header header header" 
-                       "contenedor1 contenedor1 contenedor1"
-                       "contenedor2 contenedor2 contenedor2"
-                       "caja1 caja1 caja1"
-                       "caja2 caja2 caja2"
-                       "caja3 caja3 caja3"
-                       "footer footer footer";
-  }
-  .pgraf{
-    font-size: 1.1rem;
-  }
-  .imagencursos{
-    text-align: start;
-  }
-  .imagecursos{
-    width: 240px;
-    height: 150px;
-  }
-  .titulo-cursos{
-    font-size: 1.4rem;
-  }
-  .parrafocursos{
-    margin-top: 10px;
-    -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 10px;
-    column-count: 1;
-    column-gap: 10px;
-    font-weight: bold;
     font-family: cursive;
-    color: rgb(109, 109, 109);
   }
- }
 
-
- /*COMIENZA LA PAGINA FORO*/
-
- .foro{
-  background-image: linear-gradient(#e0ddda,#2C3639,#2C3639);
- }
-
- h6{
-  font-size: 2rem;
-  color: #1c1cc0;
- }
-  
- @media (max-width:600px) {
-  h6{
-    font-size: 1rem;
+  .image1 {
+    display: float;
+    width: 280px;
+    height: 120px;
+    margin: auto;
   }
- }
 
- /*COMIENZA LA PAGINA CONTACTO*/
- .contact{
-  background-image: url(../imagenes/imagendefondo1.jpg);
-  height: 170vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- }
-
- .contenedorC {
-  width: 100%;
-  max-width: 1440px;
-  margin:5px auto;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas:"contacto contacto contacto"
-                      "header header header" 
-                      "contenedor1 contenedor1 contenedor2"
-                      "contenedor1 contenedor1 contenedor2"
-                      "footer footer footer";
+  .imagecaja {
+    width: 150px;
+    height: 100px;
+    border-radius: 1rem;
+  }
 }
-.contenedorC > div,
-.contenedorC .header,
-.contenedorC .contenedor1,
-.contenedorC .contenedor2,
-.contenedorC .footer{
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.contenedorC .contacto{
-  grid-area: contacto;
-}
-.contenedorC .header{
-  grid-area: header;
-}
-.contenedorC .contenedor1{
-  grid-area: contenedor1;
-}
-.contenedorC .contenedor2{
-  grid-area: contenedor2;
-}
-.contenedorC .footer{
-  grid-area: footer;
-}
-.index-contacto{
-  color: #ffffff;
-}
-.titulo-contact{
-  color: #b4852d;
-  margin: 1rem;
-}
-.idpadron{
-  color: #ffffff;
-}
-legend{
-  color: #e7c6c6;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-}
-label{
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-
-  

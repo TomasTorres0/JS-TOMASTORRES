@@ -1,0 +1,17 @@
+.contenedor{
+    .contenedor2{
+        grid-area: contenedor2;
+        background-image: linear-gradient(#b6862d,#4682b4);
+
+        & .titulo2{
+            text-align: center;
+            margin: 1rem;
+          }
+          & .image1{
+            display: float;
+            width: 420px;
+            height: 275px;
+            margin-left: 2rem;
+        }
+      }
+}

@@ -1,0 +1,30 @@
+.contenedor {
+    width: 100%;
+    max-width: 1440px;
+    margin:5px auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:"contacto contacto contacto"
+                        "header header header" 
+                        "contenedor1 contenedor1 contenedor1"
+                        "contenedor2 contenedor2 contenedor2"
+                        "contenedor3 contenedor3 contenedor3"
+                        "caja1 caja2 caja3"
+                        "caja1 caja2 caja3"
+                        "caja1 caja2 caja3"
+                        "footer footer footer";
+}
+.contenedor > div,
+.header,
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.caja1,
+.caja2,
+.footer{
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #F0EBCC;
+}

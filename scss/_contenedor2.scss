@@ -1,0 +1,11 @@
+.contenedor{
+    .contenedor3{
+        grid-area: contenedor3;
+        background-image: linear-gradient(#4682b4,#808080);
+
+        & .titulo3{
+            text-align: center;
+            color: #252d3d98;
+        }
+      }
+}

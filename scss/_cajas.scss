@@ -1,0 +1,46 @@
+.caja1{
+    grid-area: caja1;
+    background-image: linear-gradient(#808080,#ffffff);
+    
+  }
+  .caja2{
+    grid-area: caja2;
+    background-image: linear-gradient(#808080,#ffffff);
+  }
+  .caja3{
+    grid-area: caja3;
+    background-image: linear-gradient(#808080,#ffffff);
+  }
+  & .img{
+    text-align: center;
+  }
+  & .imagecaja{
+    width: 300px;
+    height: 200px;
+    border-radius: 1rem;
+  }
+  & .titulo-caja{
+    text-align: start;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  & .p-caja{
+    font-size: large;
+    font-family: initial;
+    color: #242527;
+    text-align: center;
+  }
+  & .ul-caja{
+    text-align: start;
+    padding: 1rem;
+  }
+  & li{
+    margin: 1rem;
+    font-size: large;
+    text-align: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: circle;
+  }
+  & .boton{
+    text-align: center; 
+  }
