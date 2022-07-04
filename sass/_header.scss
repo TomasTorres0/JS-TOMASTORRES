@@ -1,27 +1,27 @@
-.contenedor{
-    .header{
-        grid-area: header;
-        background-image: linear-gradient(#999393 , #7c7979,#1c1cc0);
-        position: relative;
-        z-index: 100;
-        & .logoo{
-            text-align: center;
-          }
-         & .logo{
-          width: 320px;
-          height: 80px;
-         }
-         & .ulheader{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            list-style: none;
-          }
-         & .li-header{
-            list-style: none;
-          }
-         & .navbar{
-            color: #000;
-          }
+
+  .header{
+    grid-area: header;
+    background-image: linear-gradient(#999393 , #7c7979,#1c1cc0);
+    position: relative;
+    z-index: 100;
+    .logoo{
+        text-align: center;
       }
-}
+    .logo{
+      width: 320px;
+      height: 80px;
+     }
+    .ulheader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+      }
+    .li-header{
+        list-style: none;
+      }
+    .navbar{
+        color: #000;
+      }
+  }
+

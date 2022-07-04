@@ -2,70 +2,20 @@
     grid-area: footer;
     background-image: linear-gradient(#ffffff,#000);
 
-    & .alineartexto{
+    .alineartexto{
         text-align: center;
       }
-      & .ul-footer{
+    .ul-footer{
         display: flex;
         justify-content: space-around;
         align-items: center; 
       }
-      & .li-footer{
+    .li-footer{
         list-style: none;
       }
   }
 
-  @media (max-width:600px) {
-    .index {
-      background-color: #F0EBCC;
-      color: black;
-      font-family: sans-serif;
-      background-image: url(../imagenes/fondo2.jpg);
-      background-repeat: repeat;
-    }
-    .contenedor{
-       
-        grid-template-areas:"contacto contacto contacto"
-                          "header header header" 
-                          "contenedor1 contenedor1 contenedor1"
-                          "contenedor2 contenedor2 contenedor2"
-                          "contenedor3 contenedor3 contenedor3"
-                          "caja1 caja1 caja1"
-                          "caja2 caja2 caja2"
-                          "caja3 caja3 caja3"
-                          "footer footer footer";
-    }
-    .logo{
-      width: 270px;
-      height: 70px;
-    }
-    .ulheader{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-    }
-    .parrafo1{
-      margin-top: 10px;
-    -moz-column-count: 1;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 10px;
-    column-count: 1;
-    column-gap: 10px;
-    font-family: cursive;
-    }
-    .image1{
-      display: float;
-      width: 280px;
-      height: 120px;
-      margin: auto;
-    }
-    .imagecaja{
-      width: 150px;
-      height: 100px;
-      border-radius: 1rem;
-    }
+  
+ 
 
-  }
+ 
