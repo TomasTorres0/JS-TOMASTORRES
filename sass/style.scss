@@ -1,0 +1,195 @@
+@use 'body';
+@use 'grid';
+@use 'contacto';
+@use 'header';
+@use 'contenedor';
+@use 'contenedor1';
+@use 'contenedor2';
+@use 'cajas';
+@use 'footer';
+
+ /*COMIENZA LA PAGINA GRAFICOS*/
+ .pagina-graficos{
+  background-image:linear-gradient(#ff0000, #bb1818 ,#2d00f8) ;
+}
+  .contenedorA {
+    width: 100%;
+    max-width: 1440px;
+    margin:5px auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:"contacto contacto contacto"
+                        "header header header" 
+                        "contenedor1 contenedor1 contenedor1"
+                        "contenedor2 contenedor2 contenedor2"
+                        "footer footer footer";
+}
+.contenedorA > div,
+.contenedorA .header,
+.contenedorA .contenedor1,
+.contenedorA .contenedor2,
+.contenedorA .footer{
+    padding: 20px;
+    border-radius: 4px;
+    
+}
+.contenedorA .contacto{
+  grid-area: contacto;
+  background-color: black;
+  color: white;
+}
+.contenedorA .header{
+  grid-area: header;
+  position: relative;
+  z-index: 100;
+}
+.contenedorA .contenedor1{
+  grid-area: contenedor1;
+
+}
+.contenedorA .contenedor2{
+  grid-area: contenedor2;
+
+}
+.contenedorA .footer{
+  grid-area: footer;
+}
+  
+  .titulo-graficos{
+    text-align: start;
+    font-size: 3rem;
+    font-family: cursive;
+    color: #ffffff;
+  }
+  .parrafo-graficos{
+    margin-top: 10px;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    font-weight: bold;
+  }
+  .imagen1-graficos{
+    margin-top: 30px;
+    border-radius: 0.5rem;
+  }
+  .titulo1-graficos{
+    font-size: 3rem;
+    text-align: center;
+    font-family: cursive;
+    color: #ff0000;
+
+  }
+
+  /* COMIENZA GRID DE LA PARTE ASIDE*/
+  .contenedorx {
+    width: 100%;
+    max-width: 1440px;
+    margin:5px auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "t-tarjetas t-tarjetas imga"
+                         "card-text card-text imga"
+                         "card-text card-text imga";
+}
+
+.contenedorx > div,
+.contenedorx .card-text,
+.contenedorx .imga{  
+      border-radius: 4px;
+  }
+  .contenedorx .t-tarjetas{
+    grid-area: t-tarjetas;
+    height: 6vh;
+  }
+  .contenedorx .card-text{
+    grid-area: card-text;
+  }
+  .contenedorx .text-muted{
+    grid-area: text-muted;
+  }
+  .contenedorx .imga{
+    grid-area: imga;
+  }
+
+  .contenedorxy { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "imga t-tarjetas t-tarjetas"
+                         "imga card-text card-text"
+                         "imga card-text card-text";
+}
+
+.contenedorxy > div,
+.contenedorxy .card-text,
+.contenedorxy .imga{
+      padding: 20px;
+      border-radius: 4px;
+  }
+  .contenedorxy .t-tarjetas{
+    grid-area: t-tarjetas;
+    height: 6vh;
+  }
+  .contenedorxy .card-text{
+    grid-area: card-text;
+  }
+  .contenedorxy .text-muted{
+    grid-area: text-muted;
+  }
+  .contenedorxy .imga{
+    grid-area: imga;
+ }
+ /* TERMINA GRID DE LA PARTE ASIDE*/
+  .cardgraf{
+    display: flex;
+  }
+  .titulo2{
+    font-size: 2rem;
+    color: rgb(2, 2, 2);
+    align-items: center;
+  }
+  .card-text{
+    font-size: 1.45rem;
+    color: #101312;
+    text-align: center;
+    margin: auto;
+  }
+  .imga{
+    text-align: end;
+  }
+  .card{
+    width: 680px;
+    border-radius: 0.5em;
+  }
+
+
+
+
+
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

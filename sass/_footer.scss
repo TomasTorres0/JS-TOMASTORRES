@@ -1,21 +1,21 @@
-@use 'body';
-@use 'grid';
-@use 'contacto';
-@use 'header';
-@use 'contenedor';
-@use 'contenedor1';
-@use 'contenedor2';
-@use 'cajas';
-@use 'footer';
+.footer{
+    grid-area: footer;
+    background-image: linear-gradient(#ffffff,#000);
 
+    & .alineartexto{
+        text-align: center;
+      }
+      & .ul-footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+      }
+      & .li-footer{
+        list-style: none;
+      }
+  }
 
-
-
-
-
-
-
-@media (max-width:600px) {
+  @media (max-width:600px) {
     .index {
       background-color: #F0EBCC;
       color: black;
@@ -69,21 +69,3 @@
     }
 
   }
-   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
