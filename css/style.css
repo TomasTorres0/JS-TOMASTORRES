@@ -75,6 +75,11 @@
 }
 .contenedor1 .titulo {
   text-align: center;
+  color: #ffffff;
+}
+.contenedor1 .titulo:hover {
+  color: black;
+  transition-delay: 3s;
 }
 .contenedor1 .parrafo1 {
   margin-top: 20px;
@@ -89,7 +94,7 @@
 
 .contenedor2 {
   grid-area: contenedor2;
-  background-image: linear-gradient(#b6862d, #4682b4);
+  background-image: linear-gradient(#be8b2c, #4682b4);
 }
 .contenedor2 .titulo2 {
   text-align: center;
@@ -228,7 +233,7 @@ li {
 }
 /*COMIENZA LA PAGINA GRAFICOS*/
 .pagina-graficos {
-  background-image: linear-gradient(#ff0000, #bb1818, #2d00f8);
+  background-image: linear-gradient(#87805E, #B09B71, #D8CCA3, #EDDFB3);
 }
 
 .contenedorA {
@@ -239,13 +244,13 @@ li {
   grid-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, auto);
-  grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "footer footer footer";
+  grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2-graficos contenedor2-graficos contenedor2-graficos" "footer footer footer";
 }
 
 .contenedorA > div,
 .contenedorA .header,
 .contenedorA .contenedor1,
-.contenedorA .contenedor2,
+.contenedorA .contenedor2-graficos,
 .contenedorA .footer {
   padding: 20px;
   border-radius: 4px;
@@ -261,6 +266,7 @@ li {
   grid-area: header;
   position: relative;
   z-index: 100;
+  background-image: none;
 }
 
 .header {
@@ -289,14 +295,16 @@ li {
 
 .contenedorA .contenedor1 {
   grid-area: contenedor1;
+  background-image: none;
 }
 
-.contenedorA .contenedor2 {
-  grid-area: contenedor2;
+.contenedorA .contenedor2-graficos {
+  grid-area: contenedor2-graficos;
 }
 
 .contenedorA .footer {
   grid-area: footer;
+  background-image: none;
 }
 
 .titulo-graficos {
@@ -326,7 +334,8 @@ li {
   font-size: 3rem;
   text-align: center;
   font-family: cursive;
-  color: #ff0000;
+  color: #a10909;
+  margin: 1em;
 }
 
 /* COMIENZA GRID DE LA PARTE ASIDE*/
@@ -376,6 +385,7 @@ li {
 .contenedorxy .imga {
   padding: 20px;
   border-radius: 4px;
+  background-image: none;
 }
 
 .contenedorxy .t-tarjetas {
@@ -424,7 +434,7 @@ li {
 
 @media (max-width: 600px) {
   .contenedorA {
-    grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "footer footer footer";
+    grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2-graficos contenedor2-graficos contenedor2-graficos" "footer footer footer";
   }
   .contenedorA .ulheader {
     display: flex;
@@ -455,8 +465,9 @@ li {
     margin: 1rem;
   }
   .contenedorA .titulo1-graficos {
-    font-size: 1.45rem;
+    font-size: 1.6rem;
     color: #e40000;
+    margin-top: 1px;
   }
   .contenedorA .contenedorx {
     grid-template-areas: "t-tarjetas t-tarjetas t-tarjetas" "card-text card-text card-text" "imga imga imga";
@@ -466,11 +477,14 @@ li {
   }
   .contenedorA .titulo2 {
     margin: auto;
+    font-size: 1.2rem;
+  }
+  .contenedorA .card-text {
+    font-size: 0.85rem;
   }
   .contenedorA .card {
-    width: 240px;
-    height: 180px;
-    margin-right: 0px;
+    width: 280px;
+    height: 160px;
   }
   .contenedorA .imga {
     text-align: center;
@@ -478,7 +492,7 @@ li {
 }
 /*COMIENZA LA PAGINA CURSOS*/
 .pagina-cursos {
-  background-image: linear-gradient(#FFC4C4, #FF869E, #FFE7BF, #A10035);
+  background-image: linear-gradient(#C7D36F, #FCF9C6, #E0DECA, #9EB23B);
 }
 
 .contenedorB {
@@ -510,14 +524,17 @@ li {
 
 .contenedorB .header {
   grid-area: header;
+  background-image: none;
 }
 
 .contenedorB .contenedor1 {
   grid-area: contenedor1;
+  background-image: none;
 }
 
 .contenedorB .contenedor2 {
   grid-area: contenedor2;
+  background-image: none;
 }
 
 .contenedorB .caja1 {
@@ -591,6 +608,9 @@ h5 {
   .contenedorB {
     grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "caja1 caja1 caja1" "caja2 caja2 caja2" "caja3 caja3 caja3" "footer footer footer";
   }
+  .contenedorB .footer {
+    background-image: none;
+  }
   .contenedorB .ulheader {
     display: flex;
     flex-direction: column;
@@ -646,11 +666,7 @@ h6 {
 }
 /*COMIENZA LA PAGINA CONTACTO*/
 .contact {
-  background-image: url(../imagenes/imagendefondo1.jpg);
-  height: 170vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(#e0ddda, #2C3639, #2C3639);
 }
 
 .contenedorC {
@@ -679,10 +695,12 @@ h6 {
 
 .contenedorC .header {
   grid-area: header;
+  background-image: none;
 }
 
 .contenedorC .contenedor1 {
   grid-area: contenedor1;
+  background-image: none;
 }
 
 .contenedorC .contenedor2 {
@@ -698,7 +716,7 @@ h6 {
 }
 
 .titulo-contact {
-  color: #b4852d;
+  color: #0d1ce2;
   margin: 1rem;
 }
 

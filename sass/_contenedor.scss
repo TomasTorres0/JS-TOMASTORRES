@@ -5,7 +5,16 @@
 
   .titulo{
       text-align: center;
+      color: #ffffff;
+      
+      
     }
+    .titulo:hover{
+      color: black;
+      transition-delay: 3s;
+      
+    }
+   
   .parrafo1{
       margin-top: 20px;
       -moz-column-count: 3;
