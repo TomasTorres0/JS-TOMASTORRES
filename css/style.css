@@ -676,14 +676,15 @@ h6 {
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor2" "contenedor1 contenedor1 contenedor2" "footer footer footer";
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "contacto contacto contacto" "header header header" "texto-contacto texto-contacto texto-contacto" "contenedor1 contenedor2 contenedor2" "contenedor1 contenedor2 contenedor2" "footer footer footer";
 }
 
 .contenedorC > div,
 .contenedorC .header,
 .contenedorC .contenedor1,
 .contenedorC .contenedor2,
+.contenedorC .texto-contacto,
 .contenedorC .footer {
   padding: 20px;
   border-radius: 4px;
@@ -698,6 +699,15 @@ h6 {
   background-image: none;
 }
 
+.contenedorC .texto-contacto {
+  grid-area: texto-contacto;
+}
+
+.titulo-contact {
+  color: #0d1ce2;
+  display: inline-block;
+}
+
 .contenedorC .contenedor1 {
   grid-area: contenedor1;
   background-image: none;
@@ -705,6 +715,8 @@ h6 {
 
 .contenedorC .contenedor2 {
   grid-area: contenedor2;
+  margin: auto;
+  background-image: linear-gradient(white, grey);
 }
 
 .contenedorC .footer {
@@ -725,7 +737,7 @@ h6 {
 }
 
 legend {
-  color: #e7c6c6;
+  color: #b14405;
   margin-top: 2rem;
   font-size: 1.5rem;
 }

@@ -384,6 +384,7 @@
   font-size: 2rem;
   font-family: cursive;
   color: #1c1cc0;
+  
 }
 .imagencursos{
   text-align: center;
@@ -499,17 +500,19 @@ h5{
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, auto);
+  grid-template-rows: repeat(6, auto);
   grid-template-areas:"contacto contacto contacto"
                       "header header header" 
-                      "contenedor1 contenedor1 contenedor2"
-                      "contenedor1 contenedor1 contenedor2"
+                      "texto-contacto texto-contacto texto-contacto"
+                      "contenedor1 contenedor2 contenedor2"
+                      "contenedor1 contenedor2 contenedor2"
                       "footer footer footer";
 }
 .contenedorC > div,
 .contenedorC .header,
 .contenedorC .contenedor1,
 .contenedorC .contenedor2,
+.contenedorC .texto-contacto,
 .contenedorC .footer{
   padding: 20px;
   border-radius: 4px;
@@ -523,12 +526,21 @@ h5{
   grid-area: header;
   background-image: none;
 }
+.contenedorC .texto-contacto{
+  grid-area: texto-contacto;
+}
+.titulo-contact{
+  color: #0d1ce2;
+  display: inline-block;
+}
 .contenedorC .contenedor1{
   grid-area: contenedor1;
   background-image: none;
 }
 .contenedorC .contenedor2{
   grid-area: contenedor2;
+  margin: auto;
+  background-image: linear-gradient(white,grey);
 }
 .contenedorC .footer{
   grid-area: footer;
@@ -544,7 +556,7 @@ h5{
   color: #ffffff;
 }
 legend{
-  color: #e7c6c6;
+  color: #b14405;
   margin-top: 2rem;
   font-size: 1.5rem;
 }
