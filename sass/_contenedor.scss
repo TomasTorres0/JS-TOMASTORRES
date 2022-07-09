@@ -5,12 +5,12 @@
 
   .titulo{
       text-align: center;
-      color: #ffffff;
+      color: $color2;
       
       
     }
     .titulo:hover{
-      color: black;
+      color: $colortexto;
       transition-delay: 3s;
       
     }

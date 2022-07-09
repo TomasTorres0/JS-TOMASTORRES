@@ -1,7 +1,7 @@
 
   .header{
     grid-area: header;
-    background-image: linear-gradient(#999393 , #7c7979,#1c1cc0);
+    background-image: linear-gradient($backgr-color);
     position: relative;
     z-index: 100;
     .logoo{
@@ -21,7 +21,7 @@
         list-style: none;
       }
     .navbar{
-        color: #000;
+        color: $colortexto;
       }
   }
 

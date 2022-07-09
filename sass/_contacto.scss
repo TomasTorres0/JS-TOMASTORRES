@@ -1,7 +1,7 @@
 .contacto{
   grid-area: contacto;
-  background-color: black;
-  color: white;
+  background-color: $colortexto;
+  color: $color2;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

@@ -7,12 +7,13 @@
 @use 'contenedor2';
 @use 'cajas';
 @use 'footer';
+@use 'variables';
 
 
 @media (max-width:600px) {
   .index {
-    background-color: #F0EBCC;
-    color: black;
+    background-color: $color1;
+    color: $colortexto;
     font-family: sans-serif;
     background-image: url(../imagenes/fondo2.jpg);
     background-repeat: repeat;
@@ -57,7 +58,7 @@
 }
  /*COMIENZA LA PAGINA GRAFICOS*/
  .pagina-graficos{
-  background-image:linear-gradient(#87805E, #B09B71 ,#D8CCA3,#EDDFB3) ;
+  background-image:linear-gradient($backgr-pagina1) ;
 }
   .contenedorA {
     width: 100%;
@@ -84,8 +85,8 @@
 }
 .contenedorA .contacto{
   grid-area: contacto;
-  background-color: black;
-  color: white;
+  background-color: $colortexto;
+  color: $color2;
 }
 .contenedorA .header{
   grid-area: header;
@@ -113,7 +114,7 @@
       list-style: none;
     }
    & .navbar{
-      color: #000;
+      color: $colortexto;
     }
 }
 .contenedorA .contenedor1{
@@ -134,7 +135,7 @@
     text-align: start;
     font-size: 3rem;
     font-family: cursive;
-    color: #e6d6d6;
+    color: $color1;
   }
   .parrafo-graficos{
     margin-top: 10px;
@@ -154,7 +155,7 @@
     font-size: 3rem;
     text-align: center;
     font-family: cursive;
-    color: #a10909;
+    color: $color-red;
     margin: 1em;
 
   }
@@ -228,12 +229,12 @@
   }
   .titulo2{
     font-size: 2rem;
-    color: rgb(2, 2, 2);
+    color: $colortexto;
     align-items: center;
   }
   .card-text{
     font-size: 1.45rem;
-    color: #101312;
+    color: $colortexto;
     text-align: center;
     margin: auto;
   }
@@ -284,7 +285,7 @@
     }
     .titulo1-graficos{
       font-size: 1.6rem;
-      color: #e40000;
+      color: $color-red-1;
       margin-top: 1px;
     }
     .contenedorx{ 
@@ -319,7 +320,7 @@
 
   /*COMIENZA LA PAGINA CURSOS*/
 .pagina-cursos{
-  background-image: linear-gradient(#C7D36F,#FCF9C6,#E0DECA,#9EB23B);
+  background-image: linear-gradient($backgr-pagina2);
 }
 .contenedorB {
   width: 100%;
@@ -383,7 +384,7 @@
   text-align: start;
   font-size: 2rem;
   font-family: cursive;
-  color: #1c1cc0;
+  color: $color-blue;
   
 }
 .imagencursos{
@@ -398,7 +399,7 @@
 .titulo-cursos{
   font-size: 2rem;
   margin: 1rem;
-  color: #7c7979;
+  color: $color-grey;
 }
 .parrafocursos{
   margin-top: 10px;
@@ -413,11 +414,11 @@
 }
 .titulo1-cursos{
   font-size: 2rem;
-  color: #1d009e;
+  color: $color-blue;
 }
 h5{
   font-size: 1.5rem;
-  color: #ff00c8;
+  color: $color-fucsia;
 }
 .btn{
   font-size: 1.2rem;
@@ -443,7 +444,7 @@ h5{
   }
   .pgraf{
       font-size: 1rem;
-      color: #000;
+      color: $colortexto;
     }
   .imagencursos{
       text-align: start;
@@ -465,7 +466,7 @@ h5{
       column-gap: 10px;
       font-weight: bold;
       font-family: cursive;
-      color: rgb(109, 109, 109);
+      color:$color-grey;
     }
   }
  
@@ -474,12 +475,12 @@ h5{
 /*COMIENZA LA PAGINA FORO*/
 
 .foro{
-  background-image: linear-gradient(#e0ddda,#2C3639,#2C3639);
+  background-image: linear-gradient($backgr-pagina3);
  }
 
  h6{
   font-size: 2rem;
-  color: #1c1cc0;
+  color:$color-blue;
  }
  
  @media (max-width:600px) {
@@ -490,7 +491,7 @@ h5{
 
  /*COMIENZA LA PAGINA CONTACTO*/
  .contact{
-  background-image: linear-gradient(#e0ddda,#2C3639,#2C3639);
+  background-image: linear-gradient($backgr-pagina3);
  }
 
  .contenedorC {
@@ -530,7 +531,7 @@ h5{
   grid-area: texto-contacto;
 }
 .titulo-contact{
-  color: #0d1ce2;
+  color: $color-blue ;
   display: inline-block;
 }
 .contenedorC .contenedor1{
@@ -540,23 +541,23 @@ h5{
 .contenedorC .contenedor2{
   grid-area: contenedor2;
   margin: auto;
-  background-image: linear-gradient(white,grey);
+  background-image: linear-gradient($color2,$color-grey);
 }
 .contenedorC .footer{
   grid-area: footer;
 }
 .index-contacto{
-  color: #ffffff;
+  color: $color2;
 }
 .titulo-contact{
-  color: #0d1ce2;
+  color: $color-blue;
   margin: 1rem;
 }
 .idpadron{
-  color: #ffffff;
+  color: $color2;
 }
 legend{
-  color: #b14405;
+  color: $color-marron;
   margin-top: 2rem;
   font-size: 1.5rem;
 }
