@@ -4,8 +4,6 @@
 }
 
 .index {
-  background-color: #F0EBCC;
-  color: black;
   font-family: sans-serif;
   background-image: url(../imagenes/fondo2.jpg);
   background-repeat: repeat;
@@ -36,8 +34,8 @@
 
 .contacto {
   grid-area: contacto;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -66,7 +64,7 @@
   list-style: none;
 }
 .header .navbar {
-  color: #000;
+  color: #000000;
 }
 
 .contenedor1 {
@@ -78,7 +76,7 @@
   color: #ffffff;
 }
 .contenedor1 .titulo:hover {
-  color: black;
+  color: #000000;
   transition-delay: 3s;
 }
 .contenedor1 .parrafo1 {
@@ -114,6 +112,7 @@
 .contenedor3 .titulo3 {
   text-align: center;
   color: rgba(37, 45, 61, 0.5960784314);
+  font-size: 2rem;
 }
 
 .caja1 {
@@ -173,7 +172,7 @@ li {
 
 .footer {
   grid-area: footer;
-  background-image: linear-gradient(#ffffff, #000);
+  background-image: linear-gradient(#ffffff, #000000);
 }
 .footer .alineartexto {
   text-align: center;
@@ -190,7 +189,7 @@ li {
 @media (max-width: 600px) {
   .index {
     background-color: #F0EBCC;
-    color: black;
+    color: #000000;
     font-family: sans-serif;
     background-image: url(../imagenes/fondo2.jpg);
     background-repeat: repeat;
@@ -201,6 +200,9 @@ li {
   .index .contenedor .logo {
     width: 270px;
     height: 70px;
+  }
+  .index .contenedor .contacto {
+    height: 3em;
   }
   .index .contenedor .ulheader {
     display: flex;
@@ -221,9 +223,9 @@ li {
   }
   .index .contenedor .image1 {
     display: float;
+    margin: 10px 30px 0 0;
     width: 280px;
     height: 120px;
-    margin: auto;
   }
   .index .contenedor .imagecaja {
     width: 150px;
@@ -258,8 +260,8 @@ li {
 
 .contenedorA .contacto {
   grid-area: contacto;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .contenedorA .header {
@@ -290,7 +292,7 @@ li {
   list-style: none;
 }
 .header .navbar {
-  color: #000;
+  color: #000000;
 }
 
 .contenedorA .contenedor1 {
@@ -311,7 +313,7 @@ li {
   text-align: start;
   font-size: 3rem;
   font-family: cursive;
-  color: #e6d6d6;
+  color: #F0EBCC;
 }
 
 .parrafo-graficos {
@@ -412,13 +414,13 @@ li {
 
 .titulo2 {
   font-size: 2rem;
-  color: rgb(2, 2, 2);
+  color: #000000;
   align-items: center;
 }
 
 .card-text {
   font-size: 1.45rem;
-  color: #101312;
+  color: #000000;
   text-align: center;
   margin: auto;
 }
@@ -446,6 +448,9 @@ li {
   .contenedorA .logo {
     width: 270px;
     height: 70px;
+  }
+  .contenedorA .contacto {
+    height: 3em;
   }
   .contenedorA .titulo-graficos {
     font-size: 1.55rem;
@@ -591,7 +596,7 @@ li {
 
 .titulo1-cursos {
   font-size: 2rem;
-  color: #1d009e;
+  color: #1c1cc0;
 }
 
 h5 {
@@ -611,6 +616,9 @@ h5 {
   .contenedorB .footer {
     background-image: none;
   }
+  .contenedorB .contacto {
+    height: 3em;
+  }
   .contenedorB .ulheader {
     display: flex;
     flex-direction: column;
@@ -624,7 +632,7 @@ h5 {
   }
   .contenedorB .pgraf {
     font-size: 1rem;
-    color: #000;
+    color: #000000;
   }
   .contenedorB .imagencursos {
     text-align: start;
@@ -646,7 +654,7 @@ h5 {
     column-gap: 10px;
     font-weight: bold;
     font-family: cursive;
-    color: rgb(109, 109, 109);
+    color: #7c7979;
   }
 }
 /*COMIENZA LA PAGINA FORO*/
@@ -704,7 +712,7 @@ h6 {
 }
 
 .titulo-contact {
-  color: #0d1ce2;
+  color: #1c1cc0;
   display: inline-block;
 }
 
@@ -716,7 +724,7 @@ h6 {
 .contenedorC .contenedor2 {
   grid-area: contenedor2;
   margin: auto;
-  background-image: linear-gradient(white, grey);
+  background-image: linear-gradient(#ffffff, #7c7979);
 }
 
 .contenedorC .footer {
@@ -728,8 +736,7 @@ h6 {
 }
 
 .titulo-contact {
-  color: #0d1ce2;
-  margin: 1rem;
+  color: #1c1cc0;
 }
 
 .idpadron {
@@ -750,7 +757,7 @@ label {
 
 @media (max-width: 600px) {
   .contenedorC {
-    grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "footer footer footer";
+    grid-template-areas: "contacto contacto contacto" "header header header" "texto-contacto texto-contacto texto-contacto" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "footer footer footer";
   }
   .contenedorC .ulheader {
     display: flex;
@@ -758,6 +765,16 @@ label {
     align-items: center;
     justify-content: center;
     margin: 10px;
+  }
+  .contenedorC .titulo-contact {
+    font-size: 1.3rem;
+    text-align: start;
+  }
+  .contenedorC label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
   }
   .contenedorC .logo {
     width: 270px;

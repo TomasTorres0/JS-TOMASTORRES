@@ -1,3 +1,7 @@
+$backgr-color : #999393,#7c7979,#1c1cc0;
+$colortexto : #000000; 
+
+
 
   .header{
     grid-area: header;
@@ -22,6 +26,6 @@
       }
     .navbar{
         color: $colortexto;
-      }
+      }  
   }
 
