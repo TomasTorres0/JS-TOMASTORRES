@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 .index {
   font-family: sans-serif;
   background-image: url(../imagenes/fondo2.jpg);
@@ -17,7 +16,15 @@
   grid-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, auto);
-  grid-template-areas: "contacto contacto contacto" "header header header" "contenedor1 contenedor1 contenedor1" "contenedor2 contenedor2 contenedor2" "contenedor3 contenedor3 contenedor3" "caja1 caja2 caja3" "caja1 caja2 caja3" "caja1 caja2 caja3" "footer footer footer";
+  grid-template-areas:"contacto contacto contacto" 
+                      "header header header"
+                      "contenedor1 contenedor1 contenedor1" 
+                      "contenedor2 contenedor2 contenedor2" 
+                      "contenedor3 contenedor3 contenedor3"
+                      "caja1 caja2 caja3" 
+                      "caja1 caja2 caja3" 
+                      "caja1 caja2 caja3" 
+                      "footer footer footer";
 }
 
 .contenedor > div,
